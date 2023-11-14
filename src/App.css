@@ -1,0 +1,160 @@
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-swiper {
+    border: 2px solid black;
+    z-index: 10;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -31px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.next-swiper {
+    border: 2px solid black;
+    z-index: 10;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -81px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.custom-pagination-container,
+.custom-pagination-container-course {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+    width: 300px;
+}
+
+.custom-pagination-feedback {
+    position: absolute;
+    top: 120% !important;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+
+    .custom-pagination-container,
+    .custom-pagination-container-course {
+        top: 106%;
+        gap: 2px;
+    }
+
+    .custom-pagination-feedback {
+        top: 100% !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    padding: 0px 20px;
+    border-radius: 15px !important;
+    margin-top: 5em;
+    z-index: 99;
+}
+
+.swiper-pagination-bullet:hover {
+    background-color: #356df1 !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #356df1 !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*courses /////*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 1rem;
+    gap: 30px;
+}
+
+.pagination .previous,
+.pagination .next {
+    color: black;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.pagination .previous:hover,
+.pagination .next:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .previous {
+    margin-right: 10px;
+}
+
+.pagination .next {
+    margin-left: 10px;
+}
+
+.pagination .break-me {
+    cursor: default;
+}
+
+.page {
+    padding: 15px 22px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+}
+
+.page.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/*tailwind css*/
+.Hover {
+    @apply hover:text-blue-600;
+}
+
+.navLink {
+    @apply hover:text-blue-600 font-normal 
+}
+/*footer ==> */
+.footer {
+    @apply flex px-0 flex-col text-center items-center justify-center lg:grid lg:grid-cols-footer lg:items-start lg:text-start gap-2 lg:px-16 bg-[#f5f7f8] py-10 pt-20
+}
+
+.footer-h {
+    @apply font-semibold text-xl mb-5
+}
